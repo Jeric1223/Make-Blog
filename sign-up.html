@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>로그인</title>
+        <title>회원가입</title>
         <link rel="stylesheet" type="text/css" href="./sign-up.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
@@ -16,15 +16,19 @@
         <div class="content_range">
             <div class="content">
                 <header>
-                    <h3 id="login-text">회원가입</h5>
+                    <h3 id="signup-text">회원가입</h5>
                 </header>
                 <section>
-                    <input id="login-id" type="text" placeholder="아이디를 입력하세요">
-                    <input class="login-password" type="text" placeholder="새로운 비밀번호를 입력하세요">
-                    <input class="login-password" type="text" placeholder="비밀번호를 다시 입력하세요">
-                    <button id="login-button">회원가입</button>
+                    <form class="signup-form">
+                        <input id="signup-id" type="text" onkeypress="Enter_Check();" placeholder="아이디를 입력하세요">
+                        <input id="signup-password1" type="password" onkeypress="Enter_Check();" placeholder="비밀번호를 입력하세요">
+                        <input id="signup-password2" type="password" onkeypress="Enter_Check();"  placeholder="비밀번호를 다시 입력하세요">
+                        <button id="signup-button" onclick="login_check()">회원가입</button>
+                        <a id="go-loginpage" href="./Login-Page.html">로그인 페이지로 가기</a>
+                    </form>
                 </section>
             </div>
         </div>
+        <script src="Blog.js"></script>
     </body>
 </html>
