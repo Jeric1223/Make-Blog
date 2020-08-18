@@ -21,10 +21,12 @@ A:HOVER {text-decoration: none; color: #e4e3e3;}
 
 body{
     background-color: #e4e3e3;
+    width: 100%;
+    height: 100%
 }
 header{
     width: 100%;
-    height: 180x;
+    height: 180;
     background-color: #204051;
     display: flex;
     flex-direction: column;
@@ -37,20 +39,65 @@ header{
     justify-content: center;
     width: 100%;
     height: 135px;
+    text-shadow: -3px 0 #1b262c, 0 3px #1b262c, 3px 0 #1b262c, 0 -3px #1b262c;
 }
 .sign{
-    font-size: 30px;
-    font-family: 'Fugaz One', cursive;
+    width: 400px;
+    height: 54px;
+    background-color: #84a8ac;
+    font-size: 1.85rem;
+    font-family: 'Kanit', sans-serif;
     display: flex;
-    flex-direction: row-reverse;
-    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
     color: #e4e3e3;
+    text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#signin:hover{
+    font-size: 1.9rem;
+    transition: 0.4s;
+}
+#signup:hover{
+    font-size: 1.9rem;
+    transition: 0.4s;
 }
 nav{
-    background-color: #84a9ac;
-    width: 100%;
-    height: 54px;
+    max-width: ; /*나중에*/
+    display: flex;
+    flex-direction: row;
 }
 #signup{
+    margin-left: 15px;
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.content{
+    width: 65%;
+    height: 800px;
+}
+aside, aside2{
+    width: 17.5%;
+}
+.menu
+{
+    width: 100%;
+    height: 54px;
+    background-color: #84a8ac;
+    display: flex;
+    align-items: center;
+}
+#writing{
+    font-family: 'Noto Sans KR', sans-serif;
     margin-left: 14px;
+    color: #e4e3e3;
+    font-size: 1.85rem;
+    text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#writing:hover{
+    font-size: 1.9rem;
+    transition: 0.4s;
 }
